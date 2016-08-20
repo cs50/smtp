@@ -1,0 +1,12 @@
+services:
+  demo:
+    environment:
+      SMTP_PASSWORD: TODO
+      SMTP_USERNAME: TODO
+  smtp:
+    environment:
+      SMTP_HOST: TODO
+      SMTP_PASSWORD: TODO
+      SMTP_PORT: TODO
+      SMTP_USERNAME: TODO
+version: "2"

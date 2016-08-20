@@ -1,0 +1,17 @@
+services:
+  demo:
+    build: .
+    container_name: demo_cli
+    environment:
+      SMTP_HOST: smtp
+      SMTP_PORT: "587"
+    links:
+      - smtp
+    volumes:
+      - .:/root
+  smtp:
+    container_name: demo_smtp
+    image: cs50/smtp
+    ports:
+      - "587"
+version: "2"
