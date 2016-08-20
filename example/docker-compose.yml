@@ -1,7 +1,7 @@
 services:
   web:
     build: .
-    container_name: demo_cli
+    container_name: example_cli
     environment:
       SMTP_HOST: smtp
       SMTP_PORT: "587"
@@ -10,7 +10,7 @@ services:
     volumes:
       - .:/root
   smtp:
-    container_name: demo_smtp
+    container_name: example_smtp
     image: cs50/smtp
     ports:
       - "587"
