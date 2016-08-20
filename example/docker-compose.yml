@@ -1,5 +1,5 @@
 services:
-  demo:
+  web:
     build: .
     container_name: demo_cli
     environment:

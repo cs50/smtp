@@ -1,5 +1,5 @@
 services:
-  demo:
+  web:
     environment:
       SMTP_PASSWORD: TODO
       SMTP_USERNAME: TODO
