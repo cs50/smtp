@@ -2,9 +2,6 @@ FROM ubuntu:14.04
 EXPOSE 587
 ENV TERM xterm
 
-# TEMP
-RUN apt-get update && apt-get install -y libphp-phpmailer php5 telnet
-
 # install dependencies
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y ca-certificates postfix sasl2-bin
