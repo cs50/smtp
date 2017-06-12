@@ -6,7 +6,7 @@ services:
   smtp:
     environment:
       SMTP_HOST: TODO
-      SMTP_PASSWORD: TODO
+      SMTP_PASSWORD: TODO # must be same as above
       SMTP_PORT: TODO
-      SMTP_USERNAME: TODO
+      SMTP_USERNAME: TODO # must be same as above
 version: "2"

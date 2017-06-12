@@ -38,5 +38,6 @@ CMD echo [${SMTP_HOST}]:${SMTP_PORT} ${SMTP_USERNAME}:${SMTP_PASSWORD} > /etc/po
     postconf -e "relayhost = [${SMTP_HOST}]:${SMTP_PORT}" && \
     service saslauthd start && \
     echo "${SMTP_PASSWORD}" | saslpasswd2 -c "${SMTP_USERNAME}" -p && \
+    service rsyslog start && \
     service postfix start && \
     sleep infinity
